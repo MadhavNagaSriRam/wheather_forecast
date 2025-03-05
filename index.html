@@ -1,0 +1,299 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Report</title>
+    <style>
+        
+        
+        body { 
+            background-color: #4b778d; 
+            margin: 0; 
+            padding: 0; 
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+        /* img { margin-right: 16px; } */
+
+        .renu {
+            background-color: black;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .renu a {
+            color: white;
+            text-decoration: none;
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        #wheather {
+            display: grid;
+            grid-template-columns: repeat(24, minmax(0, 1fr)); /* Ensure 24 columns fit */
+            gap: 5px; /* Space between grid items */
+            padding: 10px;
+        }
+
+        #wheather div {
+            text-align: center;
+        }
+
+        #wheather img {
+            width: 30px;
+            height: 30px;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr; /* 1 part for the left, 2 parts for the graph */
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+        }
+
+        .left-panel {
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin: 0 0 20px;
+        }
+
+        .months {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 20px;
+        }
+
+        .months p {
+            margin: 5px 0;
+            font-size: 24px;
+        }
+
+        .right-panel img {
+            width: 100%;
+            max-height: 80vh;
+            border-radius: 10px;
+        }
+
+        .weather-reports {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .weather-box {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #555;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .weather-box:hover {
+            transform: scale(1.05);
+            background-color: #666;
+        }
+
+        .weather-box h2 {
+            font-size: 30px;
+            margin: 10px 0;
+        }
+
+        .weather-box p {
+            font-size: 20px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <center><h1 style="color: red; font-size: 50px;">Weather Report</h1></center>
+    <figure>
+        <center><h1>Kakinada 35<sup>.C</sup>
+        <img src="header.jpg" height="30px" width="30px"></img></h1></figure>
+
+        <div class="weather-reports">
+            <div class="weather-box">
+                <h2>Past Weather Report</h2>
+                <p>Temperature: 28°C</p>
+                <p>Condition: Sunny</p>
+            </div>
+    
+            <div class="weather-box">
+                <h2>Present Weather</h2>
+                <p>Temperature: 35°C</p>
+                <p>Condition: Partly Cloudy</p>
+            </div>
+    
+            <div class="weather-box">
+                <h2>Future Weather</h2>
+                <p>Temperature: 30°C</p>
+                <p>Condition: Rainy</p>
+            </div>
+        </div>
+
+    <nav class="renu">
+        <a href="Sunday.html" target="_blank">SUNDAY</a>
+        <a href="Monday.html" target="_blank">MONDAY</a>
+        <a href="Tuesday.html" target="_blank">TUESDAY</a>
+        <a href="Wednesday.html" target="_blank">WEDNESDAY</a>
+        <a href="Thursday.html" target="_blank">THURSDAY</a>
+        <a href="Friday.html" target="_blank">FRIDAY</a>
+        <a href="Saturday.html" target="_blank">SATURDAY</a>
+    </nav>
+
+    <div id="wheather">
+        <div width="50px">
+            <p>12am</p>
+            <img src="night_time\4.jpg" height="50px" width="50px">
+            <p>28 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>1am</p>
+            <img src="night_time\4.jpg" height="50px" width="50px">
+            <p>28 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>2am</p>
+            <img src="night_time\4.jpg" height="50px" width="50px">
+            <p>28 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>3am</p>
+            <img src="night_time\5.jpg" height="50px" width="50px">
+            <p>26 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>4am</p>
+            <img src="night_time\2.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>5am</p>
+            <img src="night_time\2.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div width="50px">
+            <p>6am</p>
+            <img src="day_time/10.jpg" height="50px" width="50px">
+            <p>28 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>7am</p>
+            <img src="day_time/11.jpg" height="50px" width="50px">
+            <p>29 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>8am</p>
+            <img src="day_time/11.jpg" height="50px" width="50px">
+            <p>29 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>9am</p>
+            <img src="day_time/11.jpg" height="50px" width="50px">
+            <p>30 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>10am</p>
+            <img src="day_time/4.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>11am</p>
+            <img src="day_time/2.jpg" height="50px" width="50px">
+            <p>28 <sup>.c</sup></p>
+        </div>
+        <div width="50px">
+            <p>12pm</p>
+            <img src="day_time/5.jpg" height="50px" width="50px">
+            <p>30 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>1pm</p>
+            <img src="day_time/11.jpg" height="50px" width="50px">
+            <p>32 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>2pm</p>
+            <img src="day_time/9.jpg" height="50px" width="50px">
+            <p>35 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>3pm</p>
+            <img src="day_time/7.jpg" height="50px" width="50px">
+            <p>33 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>4pm</p>
+            <img src="day_time/7.jpg" height="50px" width="50px">
+            <p>31 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>5pm</p>
+            <img src="day_time/5.jpg" height="50px" width="50px">
+            <p>28 <sup>.c</sup></p>
+        </div>
+        <div width="50px">
+            <p>6pm</p>
+            <img src="day_time/11.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>7pm</p>
+            <img src="night_time/4.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>8pm</p>
+            <img src="night_time/4.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>9pm</p>
+            <img src="night_time/4.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>10pm</p>
+            <img src="night_time/6.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+        <div>
+            <p>11pm</p>
+            <img src="night_time/6.jpg" height="50px" width="50px">
+            <p>27 <sup>.c</sup></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Left panel with heading and months -->
+        <div class="left-panel">
+            <h1>Last Six Months Peak Temperature Data</h1>
+            <div class="months">
+                <p>February</p>
+                <p>January</p>
+                <p>December</p>
+                <p>November</p>
+                <p>October</p>
+                <p>September</p>
+            </div>
+        </div>
+
+        <!-- Right panel with graph image -->
+        <div class="right-panel">
+            <img src="C:/Users/RENUKA/OneDrive/Desktop/html/JavaScript/graph.png" alt="Temperature Graph">
+        </div>
+    </div>
+</body>
+</html>
